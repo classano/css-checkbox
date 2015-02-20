@@ -1,0 +1,42 @@
+.checkboxContainer{
+	position: relative;
+	display: inline-block;
+}
+	.checkboxContainer .checkboxBtn{
+		position: absolute;
+		z-index: -1;
+	}
+		.checkboxContainer .checkboxBtn + label {
+			background-color: #ccc;
+			display: inline-block;
+			border-color: #101010;
+			border: 1px solid transparent;
+			border-radius: 4px;
+			padding: 6px 8px;
+			-moz-user-select: none;
+			background-image: none;
+			text-align: center;
+			vertical-align: middle;
+			white-space: nowrap;
+			cursor: pointer;
+			font-weight: 400;
+			margin-bottom: 0;
+			content: "\f095";
+		}
+		.checkboxContainer .checkboxBtn:checked + label {
+			background-color: #5cb85c;
+			border-color: #4cae4c;		
+			color: #fff;
+			padding-right: 11px;
+		}
+		.checkboxContainer .checkboxBtn + label span:before {
+			font-family: FontAwesome;
+			padding: 0 6px 0 0;
+			content: "\f057";
+			font-size: 150%;
+		}
+		.checkboxContainer .checkboxBtn:checked + label span:before {
+			content: "\f058";
+			color: #fff;
+			padding: 0 3px 0 0;
+		}
